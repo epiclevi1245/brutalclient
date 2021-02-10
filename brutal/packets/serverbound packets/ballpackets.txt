@@ -1,0 +1,4 @@
+ball packets start with an 8 and include either a 1 or a 0
+[8, 1] is mousebutton one down
+[8, 0] is moustbutton one up
+ball position data is included in movement packets.

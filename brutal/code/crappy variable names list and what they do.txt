@@ -1,0 +1,17 @@
+n line 405:                      unknown
+t line 405:                      unknown
+q line 405:                      unknown
+cb line 406:                      unknown
+db line 406:                      unknown
+ua line 406:                      unknown
+va line 406:                      unknown
+eb line 408:                      function that checks useragent returns variable f
+b line 408:                      variable in function eb(declared line 408)
+f line unknown:                      variable in function eb(line 408)
+fb line 412:                      function that works with graphics quality
+b line 412:                      variable in function fb(declared line 412)
+V line unknown:                       variable in function fb(line 412)
+f line unknown:                      variable in function fb(line 412)
+gb line 416:                      function that deals with overlays on the screen
+q line 405:                      variable used in function gb(declared line 416)
+wa line unknown:                      variable used in function gb(line 416)

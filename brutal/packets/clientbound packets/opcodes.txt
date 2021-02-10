@@ -1,0 +1,27 @@
+this.opcodes = {
+            client: {
+                OPCODE_PING: 0x00,
+                OPCODE_HELLO: 0x01,
+                OPCODE_HELLO_BOT: 0x02,
+                OPCODE_ENTER_GAME: 0x03,
+                OPCODE_LEAVE_GAME: 0x04,
+                OPCODE_INPUT: 0x05,
+                OPCODE_INPUT_BRAKE: 0x06,
+                OPCODE_AREA_UPDATE: 0x07,
+                OPCODE_CLICK: 0x08
+            },
+            server: {
+                OPCODE_PONG: 0x00,
+                OPCODE_MAP_CONFIG: 0xA0,
+                OPCODE_ENTERED_GAME: 0xA1,
+                OPCODE_ENTITY_INFO_V1: 0xB4,
+                OPCODE_ENTITY_INFO_V2: 0xB3,
+                OPCODE_EVENTS: 0xA4,
+                OPCODE_LEADERBOARD_V1: 0xA5,
+                OPCODE_LEADERBOARD_V2: 0xB5,
+                OPCODE_MINIMAP: 0xA6
+            }
+
+
+line 2054
+line 756

@@ -1,0 +1,21 @@
+let _send = WebSocket.prototype.send;
+let socket = null;
+let prettify = (buf) => {return buf};
+
+WebSocket.prototype.send = function(data) {
+  if (socket !== this) {
+    socket = this;
+    this._onmessage = this.onmessage;
+    console.log('Hijacked Socket');
+
+    this.onmessage = function(event) {
+      console.log('< incoming packet ' + ((event.data instanceof ArrayBuffer || event.data.buffer instanceof ArrayBuffer) ? prettify(new Uint8Array(event.data)) : event.data))
+      return this._onmessage(event);
+    }
+
+  }
+
+  console.log('> outgoing packet ' + ((data instanceof ArrayBuffer || data.buffer instanceof ArrayBuffer) ? prettify(new Uint8Array(data)) : data ));
+
+  _send.call(this, data);
+}

@@ -1,0 +1,1 @@
+WebSocket.prototype._send = WebSocket.prototype.send; WebSocket.prototype.send = function(a) { console.log(new Uint8Array(a)); this._send(a); };

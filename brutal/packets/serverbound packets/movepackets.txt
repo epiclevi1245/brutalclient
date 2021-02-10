@@ -1,0 +1,19 @@
+move packet starts with a 5
+
+second diget is the players angle
+
+
+
+if youre moving move packet ends with a 1
+
+if youre stationary it ends with a 0
+
+if the browser window is not the active window then 
+it will end with a 3 (includes if the JS console is the active window)
+
+if you press escape to bring up the join thing it will end with a 2
+(took so long to figure out)
+
+additional info:
+this.sendInput
+to search for move packets in code
